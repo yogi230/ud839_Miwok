@@ -18,9 +18,13 @@ package com.example.android.miwok;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
             }
         });
-
+        long unixTime = System.currentTimeMillis() / 1000L;
+        Log.v("MY ACTIVITY","time="+unixTime);
         // Find the View that shows the family category
         TextView family = (TextView) findViewById(R.id.family);
 

@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class WordAdapter  extends ArrayAdapter<word> {
     private int mcolor_res;
-    private MediaPlayer mediaPlayer;
+//    private MediaPlayer mediaPlayer;
 
     public WordAdapter(Context context, ArrayList<word> words,int color_res)
     {
